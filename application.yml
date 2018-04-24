@@ -1,0 +1,26 @@
+eureka:
+#   instance:
+#     leaseRenewalIntervalInSeconds: 1
+#     leaseExpirationDurationInSeconds: 2
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      #defaultZone: https://gambit-discovery-service-fantastic-cat.cfapps.io/eureka
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: INFO
+
+# spring:
+#   kafka:
+#     consumer:
+#       auto-offset-reset: earliest
+#       group-id: gambit
+    #bootstrap-servers: ${KAFKA_URL}
+    

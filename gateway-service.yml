@@ -1,0 +1,30 @@
+#Zuul Configuration    
+zuul:
+  routes:
+    batches:
+      path: /batches/**
+      serviceId: batch-service
+      strip-prefix: false
+    trainees:
+      path: /trainees/**
+      serviceId: user-service
+      strip-prefix: false
+    trainers:
+      path: /trainers/**
+      serviceId: user-service
+      strip-prefix: false
+    users:
+      path: /users/**
+      serviceId: user-service
+      strip-prefix: false
+
+endpoints:
+  beans:
+    enabled: true
+    sensitive: false
+  loggers:
+    enabled: true
+    sensitive: false
+  jolokia:
+    enabled: true
+    sensitive: false
