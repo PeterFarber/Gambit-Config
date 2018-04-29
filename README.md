@@ -1,4 +1,4 @@
-# Gambit Microservice configuration
+#Gambit Microservice configuration
 
 This repository holds all configuration files for the Gambit microservice 
 ecosystem. 

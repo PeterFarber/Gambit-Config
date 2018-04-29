@@ -1,10 +1,10 @@
+#Server Configuration
+server:
+  port: 10000
+
 #Zuul Configuration    
 zuul:
   routes:
-    batches:
-      path: /batches/**
-      serviceId: batch-service
-      strip-prefix: false
     trainees:
       path: /trainees/**
       serviceId: user-service
@@ -16,6 +16,14 @@ zuul:
     users:
       path: /users/**
       serviceId: user-service
+      strip-prefix: false
+    batches:
+      path: /batches/**
+      serviceId: batch-service
+      strip-prefix: false
+    skills:
+      path: /skill/**
+      serviceId: skills-service
       strip-prefix: false
 
 endpoints:
