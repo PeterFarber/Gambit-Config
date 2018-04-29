@@ -1,10 +1,6 @@
 #Server Configuration
 server:
   port: 8761
-  
-eureka:
-  instance:
-    hostname: 68.98.162.173
 
 #Eureka configuration
 eureka:
