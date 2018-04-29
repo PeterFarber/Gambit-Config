@@ -1,4 +1,6 @@
 eureka:
+  instance:
+    hostname: 68.98.162.173
   client:
     service-url:
       defaultZone: ${EUREKA_HOME}
