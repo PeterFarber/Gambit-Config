@@ -7,8 +7,7 @@ security:
     
 eureka:
   instance:
-    hostname: localhost
-    ipAddress: http://68.98.162.173
+    hostname: http://68.98.162.173
 
 
 # H2 during development
